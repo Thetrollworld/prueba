@@ -18,22 +18,33 @@ public class Inicio {
 		BufferReader BR = new BufferReader();
 		Array arr = new Array();
 		EjercicioFicheros EF = new EjercicioFicheros();
-		String fichero="C:\\Users\\Alumno-DAW\\Desktop\\daw\\prueba.txt";
-		File fichero1 = new File("C:\\Users\\Alumno-DAW\\Desktop\\EjercicioFicheros\\fich1.txt");
-		File fichero2 = new File("\\EjercicioFicheros\\fich1.txt");
+		File fichero = new File("C:\\Users\\Alumno-DAW\\Desktop\\daw");
+		
+		File fichero2= new File ("C:\\Users\\Alumno-DAW\\Desktop\\daw\\prueba.txt");
+		
+		File fichero1 = new File("src/fichero1.txt");
 		
 		try {
 		//	arr.leerFileReader(fichero);
 		//	arr.leerObjeto(fichero);
-			BR.LeerConBufferedReader(fichero1);
+			BR.LeerConBufferedReader(fichero2);
 		} catch (FileNotFoundException e) {
 			// TODO Auto-generated catch block
 			System.out.println("este fichero no existe");
 		}
 		
-		EF.devolverNombre(fichero1);
+		EF.devolverNombre(fichero2);
 		EF.rutas(fichero1);
-		System.out.println(fichero2.getPath());
+		System.out.println(fichero2);
+		EF.extension(fichero2);
+		EF.leerCarpeta(fichero);
+		EF.crearFile(fichero, "patatas");
+		EF.ficheroPadre(fichero2);
+		EF.oculto(fichero2);
+		EF.longitudFichero(fichero2);
+		EF.borrarFichero(fichero2);
+		EF.renombrarYCopiar(fichero1);
+		EF.copiar(fichero2);
 	}
 		
 		

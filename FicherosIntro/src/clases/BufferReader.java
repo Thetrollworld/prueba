@@ -14,8 +14,8 @@ public class BufferReader {
 
 	//strCurrentLine = StringCurrentLine
 	
-	public void LeerConBufferedReader(File cadena) throws IOException {
-		BufferedReader niomura = new BufferedReader(new FileReader(cadena));
+	public void LeerConBufferedReader(File fichero2) throws IOException {
+		BufferedReader niomura = new BufferedReader(new FileReader(fichero2));
 		String strCurrentLine;
 		
 	//Si strCurrentLine que es igual al fichero es distinto de null imprime strCurrentLine	
